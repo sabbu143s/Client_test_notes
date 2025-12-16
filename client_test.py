@@ -9,7 +9,7 @@ CORS(app)
 
 # ⚠️ PASTE YOUR 2ND RENDER POSTGRES URL HERE
 # In production, use os.getenv("DATABASE_URL")
-DB_URL = "postgres://YOUR_USER:YOUR_PASSWORD@YOUR_HOST/client_storage_db"
+DB_URL = "postgresql://client_db_5b7x_user:CYIQSwVZ4B5GrpgFg7EzJrJzSbNQNpBf@dpg-d4vua3i4d50c7389bo7g-a/client_db_5b7x"
 
 def get_db():
     return psycopg2.connect(DB_URL)
