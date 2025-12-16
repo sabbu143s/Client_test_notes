@@ -6,6 +6,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
+app.config['MAX_CONTENT_LENGTH'] = 500 * 1024 * 1024 # <--- Allow 500MB uploads
 
 # ⚠️ ENSURE THIS IS YOUR CORRECT INTERNAL DATABASE URL
 # It usually starts with postgres://...
